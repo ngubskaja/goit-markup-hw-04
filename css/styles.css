@@ -224,6 +224,7 @@ fill: var(--accent-color);
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
   background-color: var(--accent-color);
   color:var(--main-txt-dark);
 }
@@ -336,9 +337,7 @@ fill: var(--accent-color);
 
 .team-title {
   margin-bottom: 50px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
   text-align: center;
@@ -405,61 +404,46 @@ fill: var(--accent-color);
   align-items: center;
 }
 
-
-.link-section:hover{
-  color: var(--accent-color);
-  border: 1px solid rgba(33, 150, 243, 1);
-  
-}
-
-
 .social-list-link:hover,
 .social-list-link:focus{
   background-color: var(--accent-color);
   color: var(--main-txt-dark);
 }
 
-.link-style{
- display: block ;
- margin-right: 30px;
-}
 
+.link-style:not(:last-child){
+  margin-right: 30px;
+ }
 
 .link-section{
-  display: block;
   border: 1px solid var(--fill-color);
-  
-  border-radius: 4px;
- box-sizing: border-box;
- width: 170px;
- height: 92px;
-}
-
-.list-link{
   display: flex;
   align-items: center;
   justify-content: center; 
-  margin-top:  16px ;
-  margin-bottom: 16px ;
-  margin-right: 32px ;
-  margin-left:  32px;
-  fill:var(--fill-color);
+  border-radius: 4px;
+ width: 170px;
+ height: 92px;
+ color: var(--fill-color);
+}
+
+.list-link{
+  fill:currentColor;
   width: 106px;
   height: 60px;
 }
 
-.link-section:hover .list-link,
-.link-section:focus .list-link{
-  fill: var(--accent-color);
+.clients-list{
+ display: flex;
+}
+
+.link-section:hover,
+.link-section:focus{
+  color: var(--accent-color);
+  border-color: var(--accent-color);
   
 }
-.list-link:hover,
-.list-link:focus{
-  fill: var(--accent-color);
-}
-.link-style:hover{
-  fill: var(--accent-color);
-}
+
+
 /*-----Footer section-----*/
 
 .footer {
@@ -514,7 +498,15 @@ fill: var(--accent-color);
   letter-spacing: 0.03em;
   color: var(--main-txt-dark);
 }
+.adress:hover,
+.adress:hover{
+ color: var(--accent-color);
+}
 
+.contact-number-footer:hover,
+.contact-number-footer:focus{
+  color: var(--accent-color);
+}
 .list-footer{
   display: flex;  
   background-position: center;
@@ -613,7 +605,9 @@ fill: var(--accent-color);
 
 .btn:hover,
 .btn:focus {
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+  box-shadow:  2px 0px, 2px rgba(0, 0, 0, 0.12), 
+  2px 0px, 1px rgba(0, 0, 0, 0.08),
+   1px 0px, 3px rgba(0, 0, 0, 0.1);
   background-color: var(--accent-color);
   color: var(--main-txt-dark);
 }
@@ -650,9 +644,11 @@ fill: var(--accent-color);
  
 }
 
+
+
 .list-galery:hover,
 .list-galery:focus{
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 
